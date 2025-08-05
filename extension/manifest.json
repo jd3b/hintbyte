@@ -1,0 +1,14 @@
+{
+  "manifest_version": 3,
+  "name": "GenAI LeetCode Helper",
+  "version": "1.0",
+  "description": "Get AI hints for LeetCode problems.",
+  "permissions": ["scripting", "activeTab"],
+  "host_permissions": ["https://leetcode.com/*"],
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"]
+    }
+  ]
+}
