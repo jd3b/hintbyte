@@ -29,37 +29,64 @@
 
 ### 1. Backend (Node.js)
 
+**Deployed on Render**  
+🌐 https://hintbyte.onrender.com
+
+## 🛠️ Backend Setup (Optional for Local Testing)
+
+### 1. Clone the repository
+
 ```bash
-git clone https://github.com/jd3b/hintbyte.git
+git clone https://github.com/yourusername/hintbyte.git
 cd hintbyte/backend
-npm install
 ```
 
-Create a `.env` file in the `backend/` directory:
+### 2. Create `.env`
 
 ```env
-GEMINI_API_KEY=your_google_gemini_api_key
-PORT=5000
+PORT=10000
+OPENAI_API_KEY=your_openai_key
 ```
 
-Start the backend:
+> Note: This is already deployed, but you can run it locally if needed.
+
+### 3. Start the server
 
 ```bash
+npm install
 npm start
-# or
-node index.js
 ```
 
-The backend will run on `http://localhost:5000`.
+Backend will run at: `http://localhost:10000`
 
-### 2. Chrome Extension (Frontend)
+---
 
-1. Open Chrome and go to `chrome://extensions`
-2. Enable **Developer Mode** (top right)
-3. Click **"Load unpacked"**
-4. Select the `extension/` folder inside the project
-5. Open any LeetCode problem like [https://leetcode.com/problems/two-sum](https://leetcode.com/problems/two-sum) and see the magic!
+## 🧩 Chrome Extension Setup
 
+1. Clone the repo or download as ZIP.
+2. Open Chrome → `chrome://extensions/`
+3. Enable **Developer Mode**
+4. Click **Load Unpacked**
+5. Select the `extension/` folder
+
+---
+
+## 🔁 How It Works
+
+- The content script detects the LeetCode problem title.
+- Sends it to the deployed backend (`https://hintbyte.onrender.com/api/hints`).
+- Receives and displays AI-generated hints in a draggable UI.
+
+---
+
+## 🧠 Powered By
+
+- [Node.js](https://nodejs.org/)
+- [Express.js](https://expressjs.com/)
+- [OpenAI API](https://platform.openai.com/)
+- [Render](https://render.com)
+
+---
 ---
 
 ## 💻 Folder Structure
