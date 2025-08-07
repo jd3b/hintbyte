@@ -1,4 +1,4 @@
-# 🧠 HintByte - GenAI LeetCode Helper
+# HintByte - GenAI LeetCode Helper
 
 **HintByte** is a Chrome Extension that provides real-time AI-generated hints for LeetCode problems using Google’s Gemini API. When you open any LeetCode problem, the extension injects a draggable, beautiful hints window into the page—helping you think, not Google!
 
@@ -98,7 +98,6 @@ hintbyte/
 
 ---
 
-
 ## ❓ Coming Soon
 
 - ✨ AI-generated solutions
@@ -110,6 +109,7 @@ hintbyte/
 ## 🤝 Contributing
 
 PRs welcome! Please open issues or submit improvements for:
+
 - UI responsiveness
 - Gemini prompt quality
 - Multi-language support
@@ -119,6 +119,3 @@ PRs welcome! Please open issues or submit improvements for:
 ## ⚠️ Disclaimer
 
 This is not affiliated with LeetCode or Google. It uses publicly accessible Gemini APIs and browser extension mechanisms for educational purposes.
-
-
-
