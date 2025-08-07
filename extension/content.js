@@ -70,9 +70,13 @@ function showHintBox(title) {
 
   wrapper.innerHTML = `
     <div id="drag-bar" style="display: flex; justify-content: space-between; align-items: center; padding: 12px 16px; cursor: move;">
-      <h2 style="font-size: 18px; font-weight: 600; margin: 0;">💡 HintByte</h2>
-      <button id="toggle-box" style="background: transparent; border: none; color: white; font-size: 18px; cursor: pointer;">➖</button>
+    <div style="display: flex; align-items: center; gap: 8px;">
+      <img src="./icon128.png" alt="Logo" style="width: 20px; height: 20px; object-fit: contain;" />
+
+      <h2 style="font-size: 18px; font-weight: 600; margin: 0;">HintByte</h2>
     </div>
+    <button id="toggle-box" style="background: transparent; border: none; color: white; font-size: 18px; cursor: pointer;">➖</button>
+  </div>
     <div id="hint-content" style="padding: 16px; border-top: 1px solid #334155;">
       <div id="hint-badge" style="background: #2563eb; padding: 4px 10px; border-radius: 9999px; display: inline-block; font-size: 12px;">Hint 1</div>
       <div id="hint-text" style="background: #334155; padding: 12px; border-radius: 8px; margin-top: 8px;">⏳ Loading...</div>
@@ -129,7 +133,7 @@ function showHintBox(title) {
 
   async function loadHints() {
     try {
-      const res = await fetch("http://localhost:5000/api/hints", {
+      const res = await fetch("https://hintbyte.onrender.com/api/hints", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ title }),
