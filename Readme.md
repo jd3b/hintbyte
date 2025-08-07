@@ -27,7 +27,7 @@
 
 ## 🛠️ Setup Instructions
 
-### 1. Backend (Node.js)
+### Backend (Node.js)
 
 **Deployed on Render**  
 🌐 https://hintbyte.onrender.com
@@ -79,16 +79,6 @@ Backend will run at: `http://localhost:10000`
 
 ---
 
-## 🧠 Powered By
-
-- [Node.js](https://nodejs.org/)
-- [Express.js](https://expressjs.com/)
-- [OpenAI API](https://platform.openai.com/)
-- [Render](https://render.com)
-
----
----
-
 ## 💻 Folder Structure
 
 ```
@@ -108,13 +98,6 @@ hintbyte/
 
 ---
 
-## 📦 Sample `.env`
-
-```env
-GEMINI_API_KEY=your-secret-api-key-here
-```
-
----
 
 ## ❓ Coming Soon
 
